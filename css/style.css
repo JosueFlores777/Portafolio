@@ -1052,7 +1052,38 @@ space
     font-size: 25px;
 }
 
-@media (max-width:1199px) {
+@media (max-width:1600px) {
+    .art-grid img {
+        width: 320px;
+        border-radius: 25px 0 25px;
+        margin-right: 25px;
+    }
+    
+
+    .aside {
+        left: -370px;
+    }
+
+    .main-content {
+        padding-left: 0;
+    }
+
+    .about .about-content .personal-info .info-item p span {
+        display: block;
+        margin-left: 0;
+    }
+}
+
+
+
+@media (max-width:1200px) {
+    .art-grid img {
+        width: 320px;
+        border-radius: 25px 0 25px;
+        margin-right: 25px;
+    }
+    
+
     .aside {
         left: -270px;
     }
