@@ -639,19 +639,11 @@
 
 </html>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-const downloadButton = document.querySelector('.buttons .btn');
-
-downloadButton.addEventListener('click', (event) => {
-  event.preventDefault();
-
-  // Personalización del nombre del archivo
-  const filename = 'CV-Personalizado.pdf';
-
-  // Simular clic en un elemento `a` con la URL y el nombre del archivo
-  const a = document.createElement('a');
-  a.href = '../extra/CV_HernandezBryan.pdf';
-  a.download = filename;
-  a.click();
+$(document).ready(function() {
+    if ($(window).width() <= 567) {
+        $('.casa-img').remove();
+    }
 });
 </script>

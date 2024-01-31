@@ -1126,7 +1126,7 @@ space
 
 @media (max-width:767px) {
     .art-grid img {
-        width: 525px;
+        
         border-radius: 28px 0 28px;
         margin-right: 5px;
     }
@@ -1145,13 +1145,26 @@ space
 
 }
 
-@media (max-width:567px) {
-  
-.art-grid img {
-    width: 325px;
-    flex: 0 0 100%;
-     max-width: 100%;
-}
 
+@media (max-width: 567px) {
+    .art-grid img {
+        width: 325px;
+        border-radius: 28px 0 28px;
+        margin-right: 25px;
+    }
+    .casa .casa-img , .casa-img::before  {
+        display: none;
+    }
+    .art-banner-title {
+        text-align: center; 
+    }
+    .art-banner-overlay {
+        padding: 15px;
+    }
+    .art-banner-title h1 {
+        font-size: 2rem; /* adjust the font size as needed */
+        text-align: center;
+        margin-top: 100px; /* adjust the top margin to center the title vertically */
+    }
+    
 }
-
