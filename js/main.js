@@ -26,3 +26,16 @@ navTogglerBtn.addEventListener("click", () => {
 function toggleAside() {
   aside.classList.toggle("open");
 }
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var galleryItems = document.querySelectorAll('.art-grid-item');
+  galleryItems.forEach(function(item) {
+    item.addEventListener('click', function() {
+      var url = item.getAttribute('data-url');
+      if (url) {
+        window.location.href = url;
+      }
+    });
+  });
+});

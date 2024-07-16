@@ -792,6 +792,7 @@ h3.my-profecion {
 }
 
 .description {
+    text-align: left;
     font-size: 14px;
     color: #666;
 }
