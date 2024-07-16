@@ -34,7 +34,11 @@ document.addEventListener("DOMContentLoaded", function() {
     item.addEventListener('click', function() {
       var url = item.getAttribute('data-url');
       if (url) {
+        // Asegúrate de que la URL sea correcta
+        console.log("Navigating to:", url);
         window.location.href = url;
+      } else {
+        console.error("No URL found for this item.");
       }
     });
   });
