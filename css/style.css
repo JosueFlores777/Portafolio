@@ -14,6 +14,7 @@ body {
     list-style: 1.5;
     font-size: 16px;
     font-family: 'Poppins' sans-serif;
+    scrollbar-width: none;
 }
 
 * {
@@ -122,6 +123,22 @@ ul {
 }
 
 .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;
+}
+
+.rowContact{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;
+}
+
+.rowConten {
     display: flex;
     flex-wrap: wrap;
     margin-left: -15px;
@@ -330,8 +347,7 @@ h3.my-profecion {
     background-size: cover;
     background-position: center;
     position: relative;
-
-    z-index: 999;
+    z-index: 509;
 }
 
 .art-banner .art-banner-overlay {
@@ -626,7 +642,7 @@ h3.my-profecion {
 }
 
 .about .sobre-content .timline .timeline-text {
-    height: 25px;
+    /*height: 25px;*/
     font-size: 16px;
     text-align: justify;
 }
@@ -1058,7 +1074,7 @@ space
         border-radius: 25px 0 25px;
         margin-right: 25px;
     }
-    
+
 
     .aside {
         left: -370px;
@@ -1082,7 +1098,7 @@ space
         border-radius: 25px 0 25px;
         margin-right: 25px;
     }
-    
+
 
     .aside {
         left: -270px;
@@ -1117,20 +1133,31 @@ space
         margin-right: 25px;
     }
 
-    .home .home-img{
+    .home .home-img {
         display: none;
     }
 
+    .aside .nav-toggler {
+        display: flex;
+        left: 24px;
+        
+    }
+
+
+    .aside.open{
+        left: 0;
+        z-index: 600;
+    }
 }
 
 
 @media (max-width:767px) {
     .art-grid img {
-        
+
         border-radius: 28px 0 28px;
         margin-right: 5px;
     }
-    
+
 
     .contact .contact-info-item .col-6,
     .contact .contact-info-item,
@@ -1138,7 +1165,7 @@ space
     .about .sobre-content .experiencia,
     .about .sobre-content .educacion,
     .about .sobre-content .skills,
-    .about .sobre-content .personal-info{
+    .about .sobre-content .personal-info {
         flex: 0 0 100%;
         max-width: 100%;
     }
@@ -1152,19 +1179,56 @@ space
         border-radius: 28px 0 28px;
         margin-right: 25px;
     }
-    .casa .casa-img , .casa-img::before  {
+
+    .casa .casa-img,
+    .casa-img::before {
         display: none;
     }
+
     .art-banner-title {
-        text-align: center; 
+        text-align: center;
     }
+
     .art-banner-overlay {
         padding: 15px;
     }
+
     .art-banner-title h1 {
-        font-size: 2rem; /* adjust the font size as needed */
+        font-size: 2rem;
         text-align: center;
-        margin-top: 100px; /* adjust the top margin to center the title vertically */
+        margin-top: 100px;
+    }
+
+    .art-grid .art-grid-item {
+        float: none;
+
+    }
+
+    .about .sobre-content .timline .timeline-text {
+        /*height: 25px;*/
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .rowConten {
+        display: inline;
+        flex-wrap: wrap;
+        margin-left: -15px;
+        margin-right: -15px;
+        position: relative;
+    }
+
+    .about .sobre-content .personal-info .info-item {
+        max-width: 100%;
+    }
+
+    .rowContact{
+        display: block;
     }
     
+    .contact .contact-infor-item {
+      
+        max-width: 100%;
+    }
+
 }

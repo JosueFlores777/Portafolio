@@ -15,3 +15,14 @@ const nav = document.querySelector('.nav'),
 function showSection(element){
   console.log(element.getAttribute("href").split("#"));
 }
+
+const navTogglerBtn = document.querySelector(".nav-toggler");
+const aside = document.querySelector(".aside");
+
+navTogglerBtn.addEventListener("click", () => {
+  toggleAside();
+});
+
+function toggleAside() {
+  aside.classList.toggle("open");
+}
