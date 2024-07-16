@@ -785,6 +785,7 @@ h3.my-profecion {
     font-size: 18px;
     font-weight: bold;
 }
+
 .titleWork {
     font-size: 20px;
     font-weight: bold;
@@ -1073,6 +1074,108 @@ space
     font-size: 25px;
 }
 
+/*Portafolio*/
+
+.portafolio .video {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.portafolio .video video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.portafolio .texto-descripcion {
+    margin-bottom: 40px;
+    margin-top: 60px;
+}
+
+
+.portafolio .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portafolio .columna {
+    flex: 0 0 50%;
+    max-width: 100%;
+    padding: 15px;
+}
+
+.contenido {
+    padding: 20px;
+}
+
+.texto-descripcion .title {
+    font-size: 1.9em;
+    color: #212020;
+}
+
+.texto-descripcion .subtitle {
+    font-size: 1.05em;
+    color: #007BFF;
+}
+
+.texto-descripcion .technologies {
+    font-size: 1.65em;
+}
+
+.texto-descripcion .technologie {
+    font-size: 1.25em;
+}
+
+.texto-descripcion .technologies i {
+    margin-left: 5px;
+}
+
+.texto-descripcion .technologies .html-icon {
+    color: #E44D26;
+}
+
+.texto-descripcion .technologies .css-icon {
+    color: #1572B6;
+}
+
+.texto-descripcion .technologies .js-icon {
+    color: #F7DF1E;
+}
+
+
+
+.portafolio .card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.portafolio .card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.portafolio .card-content {
+    padding: 15px;
+}
+
+.portafolio .card h3 {
+    margin: 0;
+    font-size: 1.25em;
+}
+
+.portafolio .card p {
+    margin: 10px 0 0;
+    color: #777;
+}
+
+
+
+/**/
+
 @media (max-width:1600px) {
 
 
@@ -1087,6 +1190,17 @@ space
     .about .about-content .personal-info .info-item p span {
         display: block;
         margin-left: 0;
+    }
+
+    .aside .nav-toggler {
+        display: flex;
+        left: 24px;
+
+    }
+
+    .aside.open {
+        left: 0;
+        z-index: 600;
     }
 }
 
@@ -1106,7 +1220,10 @@ space
     }
 }
 
+
 @media (max-width:991px) {
+
+
 
     .contact .contact-info-item,
     .service .service-item {
@@ -1129,10 +1246,14 @@ space
 
     }
 
-
     .aside.open {
         left: 0;
         z-index: 600;
+    }
+
+    .portafolio .columna {
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }
 
@@ -1154,18 +1275,48 @@ space
         max-width: 100%;
     }
 
+    .portafolio .video video {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .contenido {
+        padding: 15px;
+    }
+
+    .texto-descripcion .title {
+        font-size: 1.4em;
+        color: #212020;
+    }
+    
+    .texto-descripcion .subtitle {
+        font-size: 0.95em;
+        color: #007BFF;
+    }
+    
+    .texto-descripcion .technologies {
+        font-size: 0.95em;
+    }
+    
+    .texto-descripcion .technologie {
+        font-size: 0.95em;
+    }
+    
 }
 
 
 @media (max-width: 567px) {
+    .contenido {
+        padding: 6px;
+    }
     .art-grid img {
         padding: 10px;
         width: 325px;
         border-radius: 28px 0 28px;
     }
-    
+
     .art-grid-item {
-        padding: 0px 0px 20px 0px; 
+        padding: 0px 0px 20px 0px;
     }
 
     .casa .casa-img,
