@@ -772,12 +772,16 @@ h3.my-profecion {
 
 .art-grid-item img {
     width: 100%;
-    height: auto;
+    height: 100%;
     max-width: 300px;
+    max-height: 190px;
     border-radius: 25px 0 25px;
 }
 
+
 .art-item-description {
+    margin-bottom: 10px;
+    text-align: center;
     margin-top: 10px;
 }
 
@@ -786,6 +790,16 @@ h3.my-profecion {
     font-weight: bold;
 }
 
+.etiqueta{
+    background: #f2f2fc;
+    padding: 8px;
+    color: #ec1839;
+    width: fit-content;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
 .titleWork {
     font-size: 20px;
     font-weight: bold;
@@ -1312,11 +1326,12 @@ space
     .contenido {
         padding: 6px;
     }
+    /*
     .art-grid img {
         padding: 10px;
         width: 325px;
         border-radius: 28px 0 28px;
-    }
+    }*/
 
     .art-grid-item {
         padding: 0px 0px 20px 0px;
@@ -1373,4 +1388,15 @@ space
         max-width: 100%;
     }
 
+}
+
+
+@media (max-width: 400px){
+ 
+    .art-grid img {
+        padding: 10px;
+        height: auto;
+        width: 325px;
+        border-radius: 28px 0 28px;
+    }
 }
